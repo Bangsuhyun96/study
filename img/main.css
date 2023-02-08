@@ -1,0 +1,5 @@
+.main_page2 {position: relative; display: none;}
+.main_page3 {position: relative; display: none;}
+/* select{appearance: none;} */
+.playername_wrap{ display: flex; flex-flow: column;}
+.playername_wrap > #playername{width: 22%;}

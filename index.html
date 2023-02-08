@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쿵쿵따리쿵쿵따</title>
+    <link rel="stylesheet" href="./img/main.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="main_page1">
+            <div class="game_title">
+                <h2><a href="#">쿵쿵따</a></h2>
+            </div>
+            <select id="game_person" onchange="personchoice(this)" >
+                <option>인원을 선택해주세요.</option>
+                <option value="0">2명</option>
+                <option value="1">3명</option>
+                <option value="2">4명</option>
+                <option value="3">5명</option>
+            </select>
+        </div>
+        <div class="main_page2">
+            <div class="game_player">
+                <p>게임 플레이어 : <span class="personsubmit"></span></p>
+                <div class="playername_wrap">
+                </div>          
+            </div>
+            <button onclick="gamestart()">게임 시작</button>
+        </div>
+        <div class="main_page3">
+            <input id="ccd" type="text" placeholder="시작 단어를 입력하세요." maxlength="4">
+            <div class="startplayer"></div>
+            <div id="ing">현재 단어 : <span class="textsubmit"></span><button class="ing_btn">확인</button></div>
+        </div>
+    </div>
+<script>
+    const mainpageopen = document.querySelector('.main_page2');
+    const selectdisable = document.querySelector('#game_person');
+    const gamestarton = document.querySelector('.main_page3');
+    
+    function personchoice(e){
+        const value = parseInt(e.value);
+        const playertext = document.querySelector('.personsubmit');
+        playertext.innerHTML = value + 2 + "명";
+        selectdisable.disabled = true; 
+        mainpageopen.style.display = 'block';
+
+        for(i=0;i<value+2;i++){
+            playeradd();
+        }
+    }
+
+    function playeradd(){
+        let playernum = document.createElement("input");
+        playernum.classList.add('playername');
+        playernum.type = "text";
+        playernum.placeholder = "이름을 입력하세요 .";
+        playernum.maxLength = "4";
+        let cont = document.querySelector('.playername_wrap');
+        cont.appendChild(playernum);
+    }
+
+    function gamestart(){
+        mainpageopen.style.display = 'none';
+        selectdisable.style.display = 'none';
+        gamestarton.style.display = 'block';
+
+        const playername = document.querySelectorAll('.playername_wrap > .playername');
+        const player =[];
+        for(let i=0; i<playername.length; i++){
+            player.push(playername[i].value);
+        };
+
+        let ccd = document.querySelector('#ccd');
+        let cccc = document.querySelector('.textsubmit');
+        let ingbtn = document.querySelector('.ing_btn');
+        ingbtn.addEventListener('click', function(){
+            const startplayer = document.querySelector('.startplayer');
+            cccc.innerHTML = ccd.value;
+            //내가 단어를 적고, 확인을 누르고나면, player가 바뀌고 해당 단어가 노출이 되게 해야한다.
+        });
+
+    }
+
+
+</script>
+</body>
+</html>
