@@ -17,7 +17,6 @@
             <div><button class="ready" onclick="ready()"><p>게임 시작</p></button></div>
         </div>
         <div class="main_page1">
-
             <select id="game_person" onchange="personchoice(this)" >
                 <option>인원을 선택해주세요.</option>
                 <option value="0">2명</option>
@@ -95,7 +94,9 @@
                 timesec--;
                 if(timesec == 0){
                     clearInterval(timerstart);
+                    alert('패배했어요!');
                     console.log('게임종료');
+                    location.reload();
                 }
         }, 1000);
         timesec = 10;
@@ -133,7 +134,7 @@
             if(entertext.length != 3){
                 console.log('입력하는 단어가 3글자가 아닐 경우');
                 alert('패배했어요!');
-                console.log('게임종료');
+                console.log('게임종료(입력하는 단어가 3글자가 아닐 경우)');
                 location.reload();
             }
             else if(entertext.length == 3){
@@ -155,7 +156,8 @@
                     if(lastword != firstword){
                         console.log('입력하는 단어가 3글자이면서 기존 단어가 있고 첫 글자와 마지막 글자가 다를 경우');
                         alert('패배했어요!');
-                        console.log('게임종료');
+                        console.log('게임종료(입력하는 단어가 3글자이면서 기존 단어가 있고 첫 글자와 마지막 글자가 다를 경우)');
+                        location.reload();
                     }
                     else if(lastword == firstword){
                         if(loopcnt >= playername.length){ //다음 플레이어 순서 변경
