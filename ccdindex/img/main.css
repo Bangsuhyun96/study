@@ -1,5 +1,18 @@
+.wrap {position: relative; max-width:720px; margin: 0 auto; text-align: center;}
+.main_page0 {position: relative; display: block;}
+.main_page1 {position: relative; display: none;}
 .main_page2 {position: relative; display: none;}
 .main_page3 {position: relative; display: none;}
 /* select{appearance: none;} */
 .playername_wrap{ display: flex; flex-flow: column;}
 .playername_wrap > #playername{width: 22%;}
+
+
+/*page 0*/
+.game_title {margin: 100px 0 0 0;}
+.game_title > h2 {margin: 0 0 20px 0;}
+.game_title > h2 > a {font-size: 32px; font-weight: 400; color: #fef23a;}
+
+.main_page0 {}
+.main_page0 button {width: 200px; height: 80px; font-size: 26px; border:solid 2px #ff3153; border-radius: 15px;}
+.main_page0 p {font-size: 24px; color:#fffeee;}
