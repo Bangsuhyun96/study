@@ -1,0 +1,18 @@
+.wrap{max-width: 720px; margin:0 auto;}
+.divwrap{position: relative; background: url(../Img/mainbg.png) no-repeat top center; width: 720px; height: 1024px;}
+
+.createloc{ display: flex; flex-wrap: wrap-reverse; width: 128px; margin: 0 auto; overflow: hidden; height: 770px;}
+.standard0{ background: url(../Img/anime1-1.png) no-repeat top center; width: 128px; height: 128px; margin: -25px 0 0 0;}
+.standard1{ background: url(../Img/anime4-1.png) no-repeat top center; width: 128px; height: 128px; margin: -25px 0 0 0;}
+
+.classcomp {position: relative; width: 720px;}
+.classcomp button{ position: absolute;}
+.classcomp button:first-child {left:100px; background: url(../Img/left_arrow.png) no-repeat top center;}
+.classcomp button:nth-child(2) {right:100px; background: url(../Img/right_arrow.png) no-repeat top center;}
+.classcomp .standard2{ position: absolute; left:100px; background: url(../Img/anime1-1.png) no-repeat top center; width: 128px; height: 128px; top:-200px}
+.classcomp .standard3{ position: absolute; right:100px; background: url(../Img/anime4-1.png) no-repeat top center; width: 128px; height: 128px; top:-200px}
+
+.score{position: absolute; top: 8px; left: 8px; width: 150px; height: 100px; border: 1px solid #ff0;}
+.score p{font-size: 35px; border-bottom: 1px solid #ff0;}
+.timer{ position: absolute; top: 8px; right: 8px; width: 150px; height: 100px; border: 1px solid #ff0;}
+.timer p{font-size: 35px; border-bottom: 1px solid #ff0;}
