@@ -17,8 +17,12 @@
 .classcomp .standard2{ position: fixed; left:10px; background: url(../Img/anime1-1.png) no-repeat top center/cover; width: 76px; height: 76px; top:400px}
 .classcomp .standard3{ position: fixed; right:10px; background: url(../Img/anime4-1.png) no-repeat top center/cover; width: 76px; height: 76px; top:400px}
 
-.score{position: fixed; top: 15px; left: 15px; width: 80px; height: 80px; color: #eeeeee; text-align: center;}
+.score{position: fixed; top: 15px; left: 15px; width: 110px; height: 80px; color: #eeeeee; text-align: center;}
 .score p{font-size: 35px; }
 .timer{ position: fixed; top: 15px; right: 15px; width: 80px; height: 80px; color: #eeeeee; text-align: center;}
 .timer p{font-size: 35px; }
 .combo{font-family: 'Maplestory Bold'; font-style: normal; position: fixed; top: 185px; left: 95px; width: 180px; height: 30px; text-align: center; font-size: 28px; color: #de3da4; text-shadow: -1px 0 #1f0a43, 0 1px #1f0a43, 1px 0 #1f0a43, 0 -1px #1f0a43;}
+.gameendmessage{display: none; position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; background-color: #222; opacity: 85%;}
+.gameendmessage_wrap{position: absolute; top: 200px; left: 50px; width: 250px; height: 150px;}
+.gameendmessage_btn{ width: 250px; height: 50px; background-color: aqua; font-size: 64px;}
+.gameendmessage_text{ width: 250px; height: 50px; background-color: aqua; font-size: 64px;}
