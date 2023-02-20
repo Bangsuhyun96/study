@@ -1,0 +1,24 @@
+@font-face {font-family: 'Maplestory Light'; font-style: normal; font-weight: 300; src: url(../font/Maplestory\ Light.ttf);}
+@font-face {font-family: 'Maplestory Bold'; font-style: normal; font-weight: 300; src: url(../font/Maplestory\ Bold.ttf);}
+*{font-family: 'Maplestory Light'; font-style: normal;}
+.wrap{width: 720px; max-height: 100%;}
+.cloud{background-color: #000; opacity: 70%; width:100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 9999; text-align: center;}
+.cloud > .startcnt{ font-size: 164px; color: #fff; margin: calc(50% + 82px) 0;}
+.divwrap{position: fixed; background: url(../Img/mainbg.png) no-repeat top center/cover; width: 100%; height: 100%;}
+
+.createloc{ display: flex; flex-wrap: wrap-reverse; width: 76px; margin: 0 auto; overflow: hidden; height: 600px;}
+.standard0{ background: url(../Img/anime1-1.png) no-repeat top center/cover; width: 76px; height: 76px; margin: -40px 0 0 0;}
+.standard1{ background: url(../Img/anime4-1.png) no-repeat top center/cover; width: 76px; height: 76px; margin: -40px 0 0 0;}
+
+.classcomp {position: relative; width: 720px;}
+.classcomp button{ position: fixed; top: 650px;}
+.classcomp button:first-child {left:60px; background: url(../Img/left_arrow.png) no-repeat top center/cover; bottom: 40px;}
+.classcomp button:nth-child(2) {right:60px; background: url(../Img/right_arrow.png) no-repeat top center/cover; bottom: 40px;}
+.classcomp .standard2{ position: fixed; left:10px; background: url(../Img/anime1-1.png) no-repeat top center/cover; width: 76px; height: 76px; top:400px}
+.classcomp .standard3{ position: fixed; right:10px; background: url(../Img/anime4-1.png) no-repeat top center/cover; width: 76px; height: 76px; top:400px}
+
+.score{position: fixed; top: 15px; left: 15px; width: 80px; height: 80px; color: #eeeeee; text-align: center;}
+.score p{font-size: 35px; }
+.timer{ position: fixed; top: 15px; right: 15px; width: 80px; height: 80px; color: #eeeeee; text-align: center;}
+.timer p{font-size: 35px; }
+.combo{font-family: 'Maplestory Bold'; font-style: normal; position: fixed; top: 185px; left: 95px; width: 180px; height: 30px; text-align: center; font-size: 28px; color: #de3da4; text-shadow: -1px 0 #1f0a43, 0 1px #1f0a43, 1px 0 #1f0a43, 0 -1px #1f0a43;}
