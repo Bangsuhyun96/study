@@ -7,8 +7,8 @@
 
 .classcomp {position: relative; width: 720px;}
 .classcomp button{ position: fixed; top: 650px;}
-.classcomp button:first-child {left:40px; background: url(../Img/left_arrow.png) no-repeat top center/cover; bottom: 40px;}
-.classcomp button:nth-child(2) {right:40px; background: url(../Img/right_arrow.png) no-repeat top center/cover; bottom: 40px;}
+.classcomp button:first-child {left:60px; background: url(../Img/left_arrow.png) no-repeat top center/cover; bottom: 40px;}
+.classcomp button:nth-child(2) {right:60px; background: url(../Img/right_arrow.png) no-repeat top center/cover; bottom: 40px;}
 .classcomp .standard2{ position: fixed; left:10px; background: url(../Img/anime1-1.png) no-repeat top center/cover; width: 76px; height: 76px; top:400px}
 .classcomp .standard3{ position: fixed; right:10px; background: url(../Img/anime4-1.png) no-repeat top center/cover; width: 76px; height: 76px; top:400px}
 
