@@ -46,4 +46,8 @@ table {
 }
 
 a{text-decoration: none;color: #000;}
-button{ all: unset; cursor: pointer;}
+button{ all: unset; cursor: pointer; }
+
+
+a:focus{outline: none; -webkit-tap-highlight-color : transparent !important;}
+button:focus{outline: none; -webkit-tap-highlight-color : transparent !important;}
