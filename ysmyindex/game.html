@@ -26,14 +26,14 @@
                 <p class="scoreresult">0점</p>
             </div>
             <div class="timer">
-                <p>시간</p>
                 <p class="timerresult">60초</p>
             </div>
             <p class="combo"></p>
             <div class="gameendmessage">
                 <div class="gameendmessage_wrap">
-                    <p class="gameendmessage_text">최고 점수</p>
-                    <a href="./index.html" class="gameendmessage_btn">다시하기</a>
+                    <p class="gameendmessage_max">점수</p>
+                    <p class="gameendmessage_score"></p>
+                    <p class="gameendmessage_btn"><a href="./index.html">다시하기</a></p>
                 </div>
             </div>
         </div>
@@ -159,12 +159,16 @@
         document.querySelector('.timerresult').innerHTML = gametime+"초";
         gametime--;
         let gametumercnt = setTimeout(gametimer, 1000);
+        if(gametime<11){
+            document.querySelector('.timer > p').style.color = "red";
+        }
         if(gametime==-1){
             document.querySelector('.gameendmessage').style.display='block';
             setTimeout(() => {
                 clearInterval(gametumercnt);
             }, 100);
         }
+        document.querySelector('.gameendmessage_score').innerHTML = score + '점';
     }
     // 실패 시 딜레이 추가(){} >> x
     // 최대 콤보 카운트(){} >> x
